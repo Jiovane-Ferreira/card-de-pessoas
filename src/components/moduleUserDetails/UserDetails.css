@@ -1,0 +1,32 @@
+
+
+.user-card {
+    border: 2px solid blue;
+    width: 18em;
+    height: 10em;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-card:hover {
+    border: 2px solid blue;
+    box-shadow: 0 0 13px 5px blue;
+}
+
+
+.user-card .list-card {
+    list-style: none;
+}
+
+.user-card .list-card li {
+    margin: 3px 0 3px 0;
+}
+
+.user-card .list-card li span {
+    font-weight: 800;
+    font-size: 16px;
+}

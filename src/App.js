@@ -1,4 +1,5 @@
 import UserDetails from "./components/moduleUserDetails/UserDetails";
+import './App.css';
 
 function App() {
   
@@ -17,19 +18,21 @@ function App() {
   return (
 
     <div className="App">
-      <h1>Lista de Profissões</h1>
-      
-      {pessoas.map((pessoa) => (
-        <UserDetails 
+      <div className="user-card-container">
+        <h1>Lista de Profissões</h1>
+        
+        {pessoas.map((pessoa) => (
+          <UserDetails 
 
-          id={pessoa.id}
-          nome={pessoa.nome}
-          idade={pessoa.idade}
-          profissao={pessoa.profissao}
-          CNH={pessoa.CNH}
+            id={pessoa.id}
+            nome={pessoa.nome}
+            idade={pessoa.idade}
+            profissao={pessoa.profissao}
+            CNH={pessoa.CNH}
 
-        />
-      ))}
+          />
+        ))}
+      </div>
 
     </div>
 
