@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import UserDetails from "./components/moduleUserDetails/UserDetails";
 
 function App() {
+  
+  
+  const pessoas = [
+
+    { id: 1, nome: "Jiovane", idade: 36, profissao: "Desenvolvedor React", CNH: true },
+    { id: 2, nome: "Jéssica", idade: 26, profissao: "Taróloga", CNH: true },
+    { id: 3, nome: "Suelen Carvalho", idade: 42, profissao: "Advogada", CNH: false },
+    { id: 4, nome: "Carol", idade: 32, profissao: "vendedora", CNH: false }
+    
+  ];
+  
+  
+  
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Lista de Profissões</h1>
+      
+      {pessoas.map((pessoa) => (
+        <UserDetails 
+
+          id={pessoa.id}
+          nome={pessoa.nome}
+          idade={pessoa.idade}
+          profissao={pessoa.profissao}
+          CNH={pessoa.CNH}
+
+        />
+      ))}
+
     </div>
+
+    
+
   );
 }
 
 export default App;
+
