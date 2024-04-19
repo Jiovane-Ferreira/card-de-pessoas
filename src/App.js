@@ -18,21 +18,34 @@ function App() {
   return (
 
     <div className="App">
-      <div className="user-card-container">
+
+      <div className="app-titulo">
         <h1>Lista de Profissões</h1>
-        
-        {pessoas.map((pessoa) => (
-          <UserDetails 
-
-            id={pessoa.id}
-            nome={pessoa.nome}
-            idade={pessoa.idade}
-            profissao={pessoa.profissao}
-            CNH={pessoa.CNH}
-
-          />
-        ))}
       </div>
+
+      <section className="card-section">
+        <div className="user-card-container">
+        
+          
+          {pessoas.map((pessoa) => (
+            <UserDetails 
+
+              id={pessoa.id}
+              nome={pessoa.nome}
+              idade={pessoa.idade}
+              profissao={pessoa.profissao}
+              CNH={pessoa.CNH}
+
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="footer-section">
+        <div className="credentials-footer-text">
+          <p>Desenvolvido por Jiovane Ferreira</p>
+        </div>
+      </section>
 
     </div>
 
