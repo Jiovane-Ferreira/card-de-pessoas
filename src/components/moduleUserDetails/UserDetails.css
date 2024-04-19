@@ -1,7 +1,7 @@
 
 
 .user-card {
-    border: 2px solid blue;
+    border: 3px solid rgb(17, 17, 248);
     width: 18em;
     height: 10em;
     padding: 1rem;
@@ -13,8 +13,8 @@
 }
 
 .user-card:hover {
-    border: 2px solid blue;
-    box-shadow: 0 0 13px 5px blue;
+    border: 3px solid rgb(0, 157, 248);
+    box-shadow: 0 0 13px 5px rgb(0, 157, 248);
     cursor: pointer;
 }
 
